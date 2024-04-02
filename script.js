@@ -1,33 +1,63 @@
 // Get a reference to the #add-employees-btn element
 const addEmployeesBtn = document.querySelector('#add-employees-btn');
-button 
-<button class="favorite styled" type="button">Add to favorites</button>
+
 
 // Collect employee data
 const collectEmployees = function() {
   // TODO: Get user input to create and return an array of employee objects
-}const objects = ["pen", "paper", "laptop", "stanley"];
+
+  // create array to store the employee objects
+  const employees = [];
+
+  let addEmp = true
+
+  // create a loop that will check if the user wants to add a new employee
+
+  while (addEmp){
+    // create 3 prompts to ask for the first name, last name , and salary
+    const firstName = prompt('what is the employees first name?');
+    const lastName = prompt('what is the employees last name?');
+    const salary = prompt('what is the employees salary?');
+    // create the employee object.
+    const empObj = {
+      firstName: firstName;
+      lastName: lastName;
+      salary: salary
+    }
+  
+    // add the newly created obj into the array of employees
+    employees.push(empObj)
+
+    // ask the user if they want to continue to add employees or not
+    addEmp = confirm('Do you want to add another employee?')
+  }
+
+  // return an array of employee objects
+  return employees;
+
+}
 
 // Display the average salary
 const displayAverageSalary = function(employeesArray) {
   // TODO: Calculate and display the average salary
 }
+const calAve = function (employees) { 
+  let sum = 0; 
+   
+  for (let i = 0; i < array.length; i++)  
+  sum += array[i]; 
+   
+  const average = sum / array.length; 
+   
+  console.log(average); 
+   
+  return average; 
+  }
 
 // Select a random employee
 const getRandomEmployee = function(employeesArray) {
   // TODO: Select and display a random employee
-}function getRandomemployee(max) {
-  return Math.floor(Math.random() * max);
 }
-
-console.log(getRandomemployee(3));
-// Expected output: 0, 1 or 2
-
-console.log(getRandomemployee(1));
-// Expected output: 0
-
-console.log(Math.random());
-// Expected output: a number from 0 to <1
 
 
 /*
