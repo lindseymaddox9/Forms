@@ -12,7 +12,7 @@ const collectEmployees = function() {
   let addEmp = true
 
   // create a loop that will check if the user wants to add a new employee
-
+0
   while (addEmp){
     // create 3 prompts to ask for the first name, last name , and salary
     const firstName = prompt('what is the employees first name?');
